@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application From</title>
+</head>
+<body>
+    <center>
+        <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1><b>
+            <center><h1>GENERAL BUS PASS APPLICATION</h1></center>
+        </b>
+    </center>
+        <form action="./submit.html" autocomplete="off">
+            <fieldset class="main-fieldset">
+                <legend><b>Applicant Details</b></legend>
+                <label for="name">Name:<span class="required-asterisk">*</span></label>
+                <input type="text" id="name" pattern="[A-z]+" minlength="5" maxlength="20" required>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; <label for="fname">Father's / Guardian's Name:<span class="required-asterisk">*</span></label>
+                <input type="text" id="name" pattern="[A-z]+" minlength="10" maxlength="15" required><br>
+                <label for="date">Date Of Birth:<span class="required-asterisk">*</span></label>
+                <input type="date" name="dob" required title="Enter your date of birth" placeholder="YYYY-MM-DD">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <label for="">Gender: <span class="required-asterisk">*</span></label>
+                <label>
+                    <input type="radio" name="Gender" value="Male" required title="Select if you are Male">Male
+                </label>
+                <input type="radio" name="Gender" value="Female" required title="Select if you are Female" placeholder="Female">Female <br>
+                <label for="">Age As on:</label>
+                <input type="checkbox" id="years" title="Select if age is in years">
+                <label for="years">Year(s)</label>
+                <input type="checkbox" id="months" title="Select if age is in months">
+                <label for="months">Month(s)</label>
+                <input type="checkbox" id="days" title="Select if age is in days">
+                <label for="days">Day(s)</label>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <label for="">Aadhar no: <span class="required-asterisk">*</span></label>
+                <input type="text" name="Aadhar" title="Enter your Aadhar number" placeholder="Enter Aadhar number"> <br><br>
+                <label for="">Whatsapp no:<span class="required-asterisk">*</span></label>
+                <input type="number" pattern="[6789]+[0-9]+" required title="Enter your Whatsapp number" placeholder="Enter Whatsapp number">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <label for="email">Email id:<span class="required-asterisk">*</span></label>
+                <input type="email" pattern="[a-z]+[0-9]@gmail.com" required title="Enter your Email ID" placeholder="Enter Email ID"><br>
+                <label for="file">Photo:</label>
+                <input type="file" title="Upload your photo" placeholder="Choose a photo to upload">
+            </fieldset>
+            <fieldset class="custom-fieldset">
+                <legend>Residential Address Details</legend>
+                <label for="address">Applicant's Address <span class="required-asterisk">*</span></label>
+                <textarea name="address" id="address" required></textarea>
+                &nbsp; &nbsp; &nbsp;<label for="district">District</label>
+                <select name="district" id="district" requried>
+                <option>
+                    ------select------
+                </option>
+                <option value="">Adilabad</option>
+                <option value="">Nalgonda</option>
+                <option value="">Ranga Reddy</option>
+                <option value="">Suryapet</option>
+            </select><br><br>
+            <label for="mandal">Mandal</label>
+            <select name="mandal" id="mandal" required>
+            <option value="">------select------</option>
+            <option value="">Golkonda</option>
+            <option value="">Charminar</option>
+            <option value="">Ameerpet</option>
+            </select>
+             &nbsp; &nbsp; &nbsp;<label for="village">Village</label>
+            <select name="village" id="village" required>
+                <option value="">------select------</option>
+                <option value="">Golkonda</option>
+                <option value="">Charminar</option>
+                <option value="">Ameerpet</option>
+            </select><br><br>
+            <label for="pin">Pincode</label>
+            <input type="tel" name="pin" id="pin" required pattern="[0-9]+" minlength="6" maxlength="6">
+        </fieldset>
+        <fieldset class="wide-fieldset">
+            <legend>Pass Type Details</legend>
+            <label for="city">City</label>
+            <select name="city" id="city" required>
+                <option value="">------select------</option>
+                <option value="">Golkonda</option>
+            </select><br><br>
+            <label for="passtype">Pass Type</label>
+            <select name="" id="passtype" required>
+                <option>------select------ </option>
+                <option>Monthly Season Tickets</option>
+                <option>Free Bus Passes</option>
+                <option value="">Concessional Passes</option>
+            </select>
+        </fieldset>
+        <fieldset class="wide-fieldset">
+            <legend>Mode of Payment & Pass Collection</legend>
+            <label for="paymode">Payment Mode</label>
+            <select name="paymode" id="paymode" required>
+                <option value="">Select Payment Method</option>
+                <option value="">Payment at counter</option>
+            </select><br><br>
+            <label for="pasdel">Pass Delivery</label>
+            <select name="pasdel" id="pasdel" required>
+                <option>Selct Pass Delivery Mode</option>
+                <option>At counter</option>
+            </select><br><br>
+            <label for="center">Center at which you want to collect pass</label>
+            <select name="center" id="center" required>
+                <option>------select------</option>
+                <option value="">Golkonda</option>
+                <option value="">Charminar</option>
+                <option value="">Ameerpet</option>
+            </select>
+        </fieldset>
+        <center><input type="submit" ></center>
+    </form>
+</body>
+</html>
